@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+    <linearGradient id="boltGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#facc15" />
+      <stop offset="100%" stop-color="#ea580c" />
+    </linearGradient>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#1d4ed8" />
+    </linearGradient>
+  </defs>
+  <!-- Background with rounded corners -->
+  <rect width="512" height="512" rx="100" fill="url(#bgGrad)" />
+  
+  <!-- Outer Geofence Radar Circle -->
+  <circle cx="256" cy="256" r="200" fill="none" stroke="#3b82f6" stroke-width="8" stroke-dasharray="16 12" opacity="0.5" />
+  <circle cx="256" cy="256" r="150" fill="none" stroke="#60a5fa" stroke-width="4" opacity="0.3" />
+
+  <!-- Shield Base -->
+  <path d="M256 90 L370 140 C370 260 256 340 256 370 C256 340 142 260 142 140 Z" fill="url(#shieldGrad)" opacity="0.3" stroke="#3b82f6" stroke-width="6" />
+
+  <!-- High-Voltage Lightning Bolt -->
+  <path d="M275 120 L195 260 L255 260 L235 390 L320 235 L260 235 Z" fill="url(#boltGrad)" stroke="#fef08a" stroke-width="6" stroke-linejoin="round" />
+
+  <!-- Accent glow badge -->
+  <circle cx="256" cy="430" r="16" fill="#10b981" />
+  <circle cx="256" cy="430" r="26" fill="none" stroke="#10b981" stroke-width="4" opacity="0.6" />
+</svg>
